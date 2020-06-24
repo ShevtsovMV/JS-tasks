@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-tasks</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(253, 246, 227, .5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay__container {
+      position: relative;
+    }
+
+    .overlay__close {
+      color: #fff;
+      position: absolute;
+      right: -5px;
+      top: -10px;
+      background: #d00;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      line-height: 20px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .overlay__content {
+      width: 400px;
+      background: #444;
+      border-radius: 5px;
+      padding: 10px;
+      color: #fff;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>#2 Модальное окно</h1>
+  <p>На странице создан произвольный контент и кнопка вызова модального окна. По нажатию нужно отобразить оверлей (блок
+    с затемнением) и модальное окно по середине экрана. Разметка внутри оверлея должа быть создана при помощи
+    javaScript. Закрыть модальное окно можно нажатием на кнопку закрыть либо по клику вне области модального окна.</p>
+  <br>
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione aut voluptatum pariatur praesentium fuga nemo!
+      Id autem asperiores veritatis maiores culpa cupiditate iusto perspiciatis, repellendus vel commodi soluta fugit
+      natus, corrupti, enim sit! Tempore et consequuntur odit autem, ad ea, nesciunt pariatur illum ducimus explicabo
+      asperiores inventore qui voluptates quo veniam magni ratione maiores hic harum, repellat numquam aut nisi
+      reprehenderit? Illo, ipsam. Vero fuga facilis fugiat ipsam ea nulla hic architecto accusantium sunt odio
+      repellendus obcaecati ullam adipisci exercitationem doloribus doloremque culpa voluptatibus soluta, itaque ut
+      reprehenderit ipsa autem illo distinctio. Ducimus accusamus temporibus consectetur ipsa explicabo non.
+      Consequuntur fugiat velit atque, nemo obcaecati voluptatibus laborum tempora aspernatur sed veritatis nobis, ipsa
+      rerum? Mollitia incidunt voluptate nisi. Fuga alias cupiditate dicta quae at eius, recusandae ratione tenetur
+      consequuntur tempora, et animi quibusdam non, debitis obcaecati. Magnam ea laborum obcaecati accusamus nemo
+      blanditiis, doloremque iste voluptates esse nihil facilis quae itaque assumenda possimus tenetur odit dolore rerum
+      dolor nobis repellat quaerat aliquid ducimus delectus incidunt. Quaerat rem obcaecati maxime animi dicta tempore
+      vitae magnam mollitia sunt commodi, enim, reiciendis natus voluptatem vero, eligendi minus molestiae tempora ut
+      quisquam minima. Incidunt, tempore cupiditate minus deserunt ea non vel itaque repellendus dolorum?</p>
+    <button id="openOverlay">Открыть</button>
+  </div>
+  <script src="2.js"></script>
+  <br>
+  <a href="../../index.html">Вернуться на главную страницу</a>
+</body>
+
+</html>

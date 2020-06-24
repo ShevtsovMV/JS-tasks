@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-tasks</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+    }
+
+    .slider__arrow {
+      text-decoration: none;
+      color: #09d;
+    }
+
+    .slider__arrow:hover {
+      color: red;
+    }
+
+    .slider__container {
+      width: 300px;
+      overflow: hidden;
+      margin: 0 10px;
+    }
+
+    .slider__list {
+      display: flex;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      transition: right .5s;
+    }
+
+    .slider__item {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: 100px;
+      height: 100px;
+      background-color: blanchedalmond;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>#1 Простой слайдер</h1>
+  <p>Это простейший слайдер элементов. При клике на правую стрелочку, элементы должны сдвигаться вправо. При клике на левую стрелочку, элементы должны сдвигаться влево.</p>
+  <br>
+  <div class="slider">
+    <a id="left" class="slider__arrow" href="#">←</a>
+    <div class="slider__container">
+      <ul id="items" class="slider__list">
+        <li class="slider__item">1</li>
+        <li class="slider__item">2</li>
+        <li class="slider__item">3</li>
+        <li class="slider__item">4</li>
+        <li class="slider__item">5</li>
+        <li class="slider__item">6</li>
+        <li class="slider__item">7</li>
+        <li class="slider__item">8</li>
+      </ul>
+    </div>
+    <a id="right" class="slider__arrow" href="#">→</a>
+  </div>
+  <script src="1.js"></script>
+  <br>
+  <a href="../../index.html">Вернуться на главную страницу</a>
+</body>
+
+</html>
