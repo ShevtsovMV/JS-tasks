@@ -10,7 +10,8 @@ leftArrow.addEventListener('click', function (event) {
   event.preventDefault();
 });
 rightArrow.addEventListener('click', function (event) {
-  if (parseFloat(items.style.right) < 500)
+  if (parseFloat(items.style.right) < 500) {
     items.style.right = parseFloat(items.style.right) + 100 + 'px';
+  }
   event.preventDefault();
 });
